@@ -1,4 +1,4 @@
-async function fetchweather(){
+export async function fetchweather(){
     const apikey="95a75ff5e705abd3c51d57c5e96c5cfb";
     const city=document.getElementById("chaxun").value;
     const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric&lang=zh_cn`;
