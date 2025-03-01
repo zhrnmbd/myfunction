@@ -14,3 +14,7 @@
     <button onclick="fetchweather()" id="dianji">点击查询</button>
   </div>
   </body>
+  <script type="module">
+    import { fetchWeather } from "https://github.com/zhrnmbd/myfunction/edit/main/weatherjs";
+    window.fetchWeather = fetchWeather; // 让 HTML 里的 `onclick="fetchWeather()"` 可用
+</script>
