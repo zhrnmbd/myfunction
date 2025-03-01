@@ -8,14 +8,15 @@
   <h1>天气查询</h1>
   <p id="wendu">温度</p>
   <p id="tianqi">天气</p>
+       <div>
+  <label for="chaxun" id="tianqi">天气</label>
+  <input type="text" id="chaxun" placeholder="请输入你要查询的地点">
+    <button onclick="fetchweather()" id="dianji">点击查询</button>
+  </div>
   </body>
   <script type="module">
     import { fetchweather } from "https://zhrnmbd.github.io/myfunction/weather.js";
     console.log("done.");
     window.fetchweather = fetchweather; // 让 HTML 里的 `onclick="fetchWeather()"` 可用
 </script>
-   <div>
-  <label for="chaxun" id="tianqi">天气</label>
-  <input type="text" id="chaxun" placeholder="请输入你要查询的地点">
-    <button onclick="fetchweather()" id="dianji">点击查询</button>
-  </div>
+
